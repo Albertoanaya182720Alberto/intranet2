@@ -30,5 +30,17 @@ MM_reloadPage(true);
 <body>
 <div id="Layer1" style="position:absolute; left:965px; top:429px; width:109px; height:31px; z-index:1"><a href="fondo.htm" target="_top"><strong>Regresar</strong></a></div>
 <div align="center"><span class="style1">Videos</span></div>
+<script>
+window.setInterval (BlinkIt, 500);
+var color = "red";
+function BlinkIt () {
+var blink = document.getElementById ("blink");
+color = (color == "#ffffff")? "red" : "#ffffff";
+blink.style.color = color;
+blink.style.fontSize='36px';}
+</script>
+<div id="blink">Hola!</div>
+<div id="blink" onclick="parent.location='http://norfipc.com'">
+Hola!</div>
 </body>
 </html>
